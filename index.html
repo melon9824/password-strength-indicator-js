@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwordStrengthIndicator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header flex">
+        <nav class="nav flex">
+            <!-- logo -->
+            <a class="nav__logo">
+                <img src="img/agile.png" alt="">
+                <p>agile<span>Point</span>.</p>
+            </a>
+
+            <!-- nav button -->
+            <button class="btn nav__btn">Contact</button>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <div class="hero__container flex">
+        <h2>Password <br> <span>Strength Indicator</span></h2>
+
+        <div class="input__box">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <button type="submit" class="flex">
+                <img src="img/arrow-right.png" alt="">
+            </button>
+
+            <p id="message">Password <span id="strength"></span></p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer flex">
+        <p>&copy; <a href="#">agile<span>Point</span>.</a> &bullet; July 17, 2023</p>
+        <p><a href="#">Khorshed Alam</a></p>
+    </footer>
+
+    <!-- <div style="background-color: #ffff00;"></div> -->
+    <script src="main.js"></script>
+</body>
+</html>

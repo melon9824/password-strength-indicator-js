@@ -1,0 +1,201 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #3f5efb;
+    background: radial-gradient(circle, #04135f 0%, #36030d 100%);
+    position: relative;
+    
+}
+
+.header {
+    width: 100%;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 5%;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #011116, #4b170548);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+/* logo */
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 2.5rem;
+}
+
+.nav__logo p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ff4000;
+}
+.nav__logo span {
+    font-weight: 300;
+    color: #00A0C8;
+}
+
+/* button */
+.btn {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff4000, #00a0c8);
+    box-shadow: #302f2f73 0px -3px 5px, #2b2a2a3f 0px 5px 2px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #00A0C8, #ff4000);
+}
+
+
+/* hero */
+.hero__container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__container h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: aqua;
+    margin-bottom: 2rem;
+}
+
+.hero__container h2 span {
+    text-decoration: underline #ff4000 wavy;
+    text-underline-offset: 0.3rem;
+
+}
+
+.input__box {
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.input__box label {
+    color: #fafafa;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.input__box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #c4c4c43f;
+    outline: none;
+    font-size: 15px;
+    color: #fafafa;
+    caret-color: #ff4000;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #c2c2c2af;
+}
+
+.input__box button {
+    border: 0;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    right: 15px;
+    bottom: -15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input__box button:hover {
+    background-color: #444;
+}
+
+#message {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: yellow;
+    display: none;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 5%;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #4b170548, #011116);
+}
+
+.footer p {
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+.footer p a {
+    color: #adabab;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    transition: 0.4s;
+}
+
+.footer p a:hover {
+    text-decoration: none;
+    color: #00A0C8;
+}
+
+
+/* responsive design*/
+@media screen and (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer p {
+        font-size: 0.5rem;
+    }
+}
